@@ -61,7 +61,7 @@ Ideal for work meetings, research interviews, professional consultations, and an
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/transcription-pipeline.git
+git clone https://github.com/Beaaa/transcription-pipeline.git
 cd transcription-pipeline
 ```
 
@@ -300,7 +300,7 @@ MIT — use freely.
 
 ## 🙋 Credits
 
-Built by **[Beatriz Alves Silva](https://github.com/YOUR_USERNAME)** with Claude's help.
+Built by **[Bea](https://github.com/Beaaa)** with Claude's help.
 
 Pipeline powered by amazing open-source projects:
 - [Demucs](https://github.com/facebookresearch/demucs) (Meta AI Research)
