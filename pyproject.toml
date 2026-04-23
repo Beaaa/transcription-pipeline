@@ -1,0 +1,26 @@
+[project]
+name = "transcription-pipeline"
+version = "0.1.0"
+description = "Pipeline de transcrição com diarização (demucs + pyannote + whisper)"
+requires-python = ">=3.10,<3.13"
+dependencies = [
+    "openai>=1.30.0",
+    "pyannote-audio>=3.1.0",
+    "demucs>=4.0.1",
+    "pydub>=0.25.1",
+    "python-dotenv>=1.0.0",
+    "torch>=2.2.0",
+    "torchaudio>=2.2.0",
+    "huggingface-hub<0.28",
+]
+
+# Força uv a instalar PyTorch do index do CUDA 12.1
+# (compatível com seu driver CUDA 12.9 — CUDA é retrocompatível)
+[[tool.uv.index]]
+name = "pytorch-cu121"
+url = "https://download.pytorch.org/whl/cu121"
+explicit = true
+
+[tool.uv.sources]
+torch = { index = "pytorch-cu121" }
+torchaudio = { index = "pytorch-cu121" }

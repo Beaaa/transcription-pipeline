@@ -1,0 +1,31 @@
+# Environment
+.venv/
+venv/
+.env
+
+# Work folders — ignore contents but keep folder structure
+audio_original/*
+!audio_original/.gitkeep
+
+already_transcripted/*
+!already_transcripted/.gitkeep
+
+output/*
+!output/.gitkeep
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+
+# uv
+.python-version
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
